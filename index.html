@@ -2,32 +2,10 @@
 <html>
 <head>
   <title>Security Settings</title>
-  <style>
-    a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #FF3B30;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
 </head>
 <body>
-  <a href="intent://#Intent;action=android.settings.SECURITY_SETTINGS;end">
+  <a href="intent://#Intent;action=android.settings.SECURITY_SETTINGS;package=com.android.settings;end">
     Open Security Settings
   </a>
-
-  <!-- Intent scheme with security path -->
-<a href="intent://settings/security#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end">
-  Open Security Settings
-</a>
-
-<!-- Android-app scheme -->
-<a href="android-app://com.android.settings/security">
-  Open Security Settings
-</a>
-
 </body>
 </html>
