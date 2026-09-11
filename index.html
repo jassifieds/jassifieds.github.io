@@ -1,27 +1,28 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>Security Settings</title>
+  <title>Open Settings</title>
+  <style>
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007AFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <a href="intent://#Intent;action=android.settings.SECURITY_SETTINGS;package=com.android.settings;end">
-    Open Security Settings
+  <a href="intent://settings/#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end">
+    Open Settings
   </a>
 
-  <a href="intent://#Intent;action=android.intent.action.MAIN;package=com.android.settings;end">
-  Open Settings
-</a>
+  <!-- Simple intent scheme -->
+<a href="intent://settings#Intent;end">Open Settings</a>
 
-  <a href="intent://settings#Intent;action=android.intent.action.MAIN;package=com.android.settings;end">
-  Open Security Settings
-</a>
-
-  <a href="intent://com.android.settings">
-  Open Settings 1
-</a>
-<a href="market://details?id=com.android.settings">
-  Open Settings 2
-</a>
+<!-- Using android-app scheme -->
+<a href="android-app://com.android.settings/">Open Settings</a>
 
 
 </body>
